@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden; }
+
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.content-wp {
+  background-image: url("./assets/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  font-family: Avenir;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 20px; }
+  @media screen and (min-width: 720px) {
+    .content-wp {
+      padding: 40px 60px; } }
+
+.equitii-header {
+  margin-bottom: 30px;
+  word-wrap: break-word; }
+  .equitii-header .equitii-logo {
+    max-width: calc(100vw - 120px); }
+    @media screen and (min-width: 570px) {
+      .equitii-header .equitii-logo {
+        max-width: 400px; } }
+
+.equitii-title {
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 10vh; }
+  @media screen and (min-width: 720px) {
+    .equitii-title {
+      font-size: 55px;
+      line-height: 50px; } }
+
+.countdown {
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 5vh;
+  padding: 0 20px; }
+  @media screen and (min-width: 720px) {
+    .countdown {
+      font-size: 50px;
+      line-height: 50px; } }
+
+#counter {
+  margin-bottom: 10vh; }
+
+.graph-wp {
+  align-self: stretch;
+  display: flex;
+  flex-grow: 1;
+  margin: 0 -20px -20px -20px;
+  position: relative; }
+  @media screen and (min-width: 720px) {
+    .graph-wp {
+      margin: 0 -60px -40px; } }
+  .graph-wp .image-wp {
+    max-width: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end; }
+    @media screen and (min-width: 720px) {
+      .graph-wp .image-wp {
+        display: flex; } }
+    .graph-wp .image-wp img {
+      height: 100%; }
+  .graph-wp .cta-wp {
+    align-self: center;
+    flex: 1;
+    flex-direction: column;
+    margin-right: -20px;
+    text-align: center;
+    width: 50%;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ }
+    .graph-wp .cta-wp .notify-me {
+      background-color: #d3d3d3;
+      border-radius: 20px;
+      border: none;
+      color: #FFF;
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      padding: 10px 30px;
+      width: 200px; }
+      .graph-wp .cta-wp .notify-me:hover {
+        cursor: pointer; }
+    .graph-wp .cta-wp .press {
+      background-color: #05013B;
+      border-radius: 20px;
+      border: 1px solid #d3d3d3;
+      color: #d3d3d3;
+      display: inline-block;
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      padding: 10px 20px;
+      text-decoration: none;
+      width: 200px;
+      white-space: nowrap; }
+      .graph-wp .cta-wp .press:hover {
+        cursor: pointer; }
+    .graph-wp .cta-wp form {
+      display: none; }
+      .graph-wp .cta-wp form.show {
+        display: block; }
+      .graph-wp .cta-wp form .email-input {
+        background-color: #05013B;
+        border-radius: 20px;
+        border: 1px solid #d3d3d3;
+        color: #d3d3d3;
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        padding: 10px 40px;
+        width: 200px; }
