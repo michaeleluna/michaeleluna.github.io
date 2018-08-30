@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQITII</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="assets/fonts/avenir.css">
+    <link rel=icon href=fav.ico sizes="16x16" type="image/png">
+</head>
+<body>
+<div class="content-wp">
+    <div class="eqitii-header">
+        <img src="./assets/images/eqitiiLogo.png" class="eqitii-logo" alt="EQITII"/>
+    </div>
+    <h1 class="eqitii-title">THE FUTURE OF DEMOCRATIZED DATA</h1>
+    <div class="graph-wp">
+        <div class="image-wp">
+            <img src="./assets/images/eqitiiGraph2.png" alt="EQITII GRAPH">
+        </div>
+        <div class="cta-wp">
+            <h2 class="countdown">Official EQITII website goes live:</h2>
+            <h2 class="countdown" id="counter"></h2>
+            <div class="cta-buttons-wp">
+                <button class="notify-me" onclick="notify()">Notify Me!</button>
+                <button class="press" onclick="downloadPressPDF()">Press Briefings</button>
+            </div>
+            <form id="emailForm" method="POST" action="">
+                <input type="email" placeholder="Your Email" name="email" class="email-input" required>
+                <button class="notify-me">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="./index.js"></script>
+<!-- Live reload script -->
+<script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+    ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+</body>
+
+</html>

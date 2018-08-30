@@ -1,0 +1,228 @@
+//$button-color: #BFC0BA;
+$button-color: #d3d3d3;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.content-wp {
+  background-image: url('./assets/images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  font-family: Avenir;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+
+  @media screen and (min-width: 720px) {
+    padding: 40px 60px;
+  }
+}
+
+.eqitii-header {
+  margin-bottom: 30px;
+  word-wrap: break-word;
+  .eqitii-logo {
+    max-width: calc(100vw - 120px);
+    @media screen and (min-width: 570px) {
+      max-width: 400px;
+    }
+  }
+}
+
+.eqitii-title {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 7vh;
+  @media screen and (min-width: 720px) {
+    font-size: 55px;
+    line-height: 50px;
+    margin-bottom: 10vh;
+  }
+}
+
+.countdown {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 3vh;
+  padding: 0 20px;
+  @media screen and (min-width: 720px) {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+#counter{
+  margin-bottom: 3vh;
+  @media screen and (min-width: 720px) {
+    margin-bottom: 10vh;
+  }
+}
+
+.graph-wp {
+  align-self: stretch;
+  display: flex;
+  flex-grow: 1;
+  margin: 0 -20px -20px -20px;
+  position: relative;
+  flex-direction: column;
+
+  @media screen and (min-width: 720px) {
+  flex-direction: row;
+    margin: 0 -60px -40px;
+  }
+
+  .image-wp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 100%;
+    order: 2;
+    position: absolute;
+    z-index: 1;
+    top: 20vh;
+
+    @media screen and (min-width: 720px) {
+      max-width: 50%;
+      order: 1;
+      position: inherit;
+      top: 0;
+      z-index: 1;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+
+  .cta-wp {
+    align-self: center;
+    flex: 1;
+    flex-direction: column;
+    margin-right: -20px;
+    max-width: 100%;
+    order: 1;
+    text-align: center;
+    z-index: 2;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+
+    @media screen and (min-width: 720px) {
+      max-width: 50%;
+      order: 2;
+    }
+
+    .notify-me {
+      background-color: $button-color;
+      border-radius: 20px;
+      border: none;
+      color: #FFF;
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      padding: 10px 30px;
+      width: 200px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+
+    .press {
+      background-color: #05013B;
+      border-radius: 20px;
+      border: 1px solid $button-color;
+      color: $button-color;
+      display: inline-block;
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      padding: 10px 20px;
+      text-decoration: none;
+      width: 200px;
+      white-space: nowrap;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    form{
+      display: none;
+      &.show{
+        display: block;
+      }
+      .email-input {
+        background-color: #05013B;
+        border-radius: 20px;
+        border: 1px solid $button-color;
+        color: $button-color;
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        padding: 10px 40px;
+        width: 200px;
+
+      }
+    }
+  }
+
+}
+
