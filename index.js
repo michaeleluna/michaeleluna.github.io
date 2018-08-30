@@ -5,7 +5,7 @@ function showEmailForm(email) {
 }
 
 function downloadPressPDF() {
-  window.open('http://assets.eqitii.com/EQITII%20Press%20Release.pdf', '_blank');
+  window.open('http://press.eqitii.com/', '_blank');
   showEmailForm('press@eqitii.com');
 }
 
